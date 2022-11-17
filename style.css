@@ -10,7 +10,6 @@ main {
   padding: 20px;
 }
 .tasks {
-  background-color: rgb(182, 182, 224);
   width: 60%;
   margin: 10px auto;
   padding: 20px;
@@ -24,4 +23,20 @@ main {
   padding: 0px 10px;
   border-radius: 10px;
   box-shadow: 1px 2px 2px;
+}
+@media (max-width: 300px) {
+  .submitbtn{
+    margin-top: 10px;
+  }
+.input{
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 }

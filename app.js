@@ -7,8 +7,7 @@ console.log(inputText);
 submitBtn.addEventListener("click", () => {
   if (inputText.value == "") {
     alert("Enter a task");
-  } 
-  else {
+  } else {
     let container = document.createElement("div");
     container.classList.add("task-item");
     let paragraph = document.createElement("p");
@@ -25,13 +24,11 @@ submitBtn.addEventListener("click", () => {
     container.appendChild(paragraph);
     container.appendChild(btnDiv);
     tasks.appendChild(container);
+    tasks.classList.add("task-body");
     inputText.value = "";
 
-    btn1.addEventListener('click', ()=>{
-      tasks.removeChild(container)
-    })
+    btn1.addEventListener("click", () => {
+      tasks.removeChild(container);
+    });
   }
-  
 });
-
-
