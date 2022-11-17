@@ -14,13 +14,10 @@ submitBtn.addEventListener("click", () => {
     paragraph.innerText = inputText.value;
 
     let btn1 = document.createElement("button");
-    let btn2 = document.createElement("button");
     let btnDiv = document.createElement("div");
     btn1.innerText = "X";
-    btn2.innerText = "Edit";
 
     btnDiv.appendChild(btn1);
-    btnDiv.appendChild(btn2);
     container.appendChild(paragraph);
     container.appendChild(btnDiv);
     tasks.appendChild(container);
